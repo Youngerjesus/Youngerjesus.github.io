@@ -54,4 +54,5 @@ theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
+  - Youngerjesus 
 #  - jekyll-feed
