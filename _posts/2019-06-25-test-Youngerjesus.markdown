@@ -2,7 +2,8 @@
 layout: post
 title:  "test "
 date:   2019-06-25 15:46:00  +0530
-categories: Vue.js 
+commetns: true 
+categories: Vue.js  
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
