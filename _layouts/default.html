@@ -9,6 +9,19 @@
 			<img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}">
 			<h2>{{ site.plainwhite.name }}</h2>
 			<p class="tagline">{{ site.plainwhite.tagline }}</p>
+			<header class="site-category">
+				<ul>
+				{% assign pages_list = site.pages %}
+				{% for node in pages_list %}
+					{% if node.title != null %}
+					{% if node.layout == "category" %}
+						<li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+						href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+					{% endif %}
+					{% endif %}
+				{% endfor %}
+				</ul>
+			</header>
 			<ul class="social">
 				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
 				<a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
