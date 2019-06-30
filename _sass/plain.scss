@@ -59,7 +59,7 @@ main {
 	@media screen and (max-width: $smallMobileW) {
 		margin: 0;	
 	}
-	.site-category{
+	.about .site-category{
 		background: $brand-color;
 		border-top: 1px solid $border-color;
 		margin:auto;
@@ -68,12 +68,12 @@ main {
 		text-align: center;
 		clear:left;
 	}
-	.site-category li{
+	.about .site-category li{
 		float: left;
 		display:inline;
 	}
 	  
-	.site-category li a{
+	.about .site-category li a{
 		background: $brand-color;
 		display:block;
 		font-weight:normal;
@@ -84,13 +84,13 @@ main {
 		text-decoration:none;
 	}
 	  
-	.site-category li a:hover{
+	.about .site-category li a:hover{
 		background: rgb(71,71,71);
 		color:#FFFFFF;
 		text-decoration:none;
 	}
 	  
-	.site-category li ul{
+	.about .site-category li ul{
 		background: rgb(109,109,109);
 		display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
 		height:auto;
@@ -104,11 +104,11 @@ main {
 		/*left:0;*/
 	}
 	  
-	.site-category li:hover ul{
+	.about .site-category li:hover ul{
 		display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
 	}
 	  
-	.site-category li li {
+	.about .site-category li li {
 		background: $brand-color;
 		display:block;
 		float:none;
@@ -117,11 +117,11 @@ main {
 		width:200px;
 	}
 	  
-	.site-category li:hover li a{
+	.about .site-category li:hover li a{
 		background:none;
 	}
 	  
-	.site-category li ul a{
+	.about .site-category li ul a{
 		display:block;
 		height:50px;
 		font-size:12px;
@@ -131,14 +131,14 @@ main {
 		text-align:left;
 	}
 	  
-	.site-category li ul a:hover, .menubar li ul li:hover a{
+	.about .site-category li ul a:hover, .menubar li ul li:hover a{
 		background: rgb(71,71,71);
 		border:0px;
 		color:#ffffff;
 		text-decoration:none;
 	}
 	  
-	.site-category ul{
+	.about .site-category ul{
 		//background: rgb(109,109,109);
 		height:50px;
 		list-style:none;
