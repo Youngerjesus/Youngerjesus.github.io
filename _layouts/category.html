@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<ul class="posts-list">
+<!-- <ul class="posts-list"> -->
   
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-    <div class="post-container">
+    <div class="posts-list">
       <a class="post-link" href="{{ page.url | relative_url }}">
         <h2 class="post-title">{{ page.title | escape }}</h2>
       </a>
@@ -36,7 +36,7 @@ layout: default
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
       </div>
-      
+
     <li>
       <h3>
         <a href="{{ site.baseurl }}{{ post.url }}">
@@ -47,4 +47,4 @@ layout: default
     </li>
   {% endfor %}
   
-</ul>
+<!-- </ul> -->
