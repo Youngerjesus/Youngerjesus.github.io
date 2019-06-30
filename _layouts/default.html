@@ -10,17 +10,25 @@
 			<h2>{{ site.plainwhite.name }}</h2>
 			<p class="tagline">{{ site.plainwhite.tagline }}</p>
 			<div class="site-category">
-				<ul>
+				<ul style="height:50px;
+				list-style:none;
+				line-height: 1.5;
+				margin:0 auto;
+				padding:0;
+				display:inline-block;">
 				{% assign pages_list = site.pages %}
 				{% for node in pages_list %}
 					{% if node.title != null %}
 					{% if node.layout == "category" %}
-						<li style="
-						display:block;
-						float:none;
-						margin:0px;
-						padding:0px;
-						width:200px;"><a class="category-link {% if page.url == node.url %} active{% endif %}"
+						<li style = "float: left;
+						display:inline;">
+						<a style ="display:block;
+							font-weight:normal;
+							line-height:50px;
+							margin:0px;
+							padding:0px 25px;
+							text-align:center;
+							text-decoration:none;" class="category-link {% if page.url == node.url %} active{% endif %}"
 						href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
 					{% endif %}
 					{% endif %}
