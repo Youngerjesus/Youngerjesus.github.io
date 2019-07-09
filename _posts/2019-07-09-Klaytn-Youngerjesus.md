@@ -1,21 +1,24 @@
 ---
 layout: post
-title:  "Introduction Klaytn "
+title:  "Introduction Klaytn"
 date:   2019-07-09 11:36:36 +0530
+tags: [klaytn, blockchain]
+author: Youngerjesus
+
 ---
 클레이튼 기존 블록체인 플랫폼의 약점 
-    Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
-        확장성을 알아보기 위해서는 두가지 조건이 있다. TPS + Block Interval 
-        TPS: 초당 몇개의 거래를 처리할 수 있는지 
-        Block Interval: 블록 생성 간격 - 블록이 어느정도 시간을 기준으로 만들어지는가 
-
-        TPS 
-            Visa TPS: 1700 
-            비트코인 TPS: 7 (현실적으로는 2개에서 3개) 
-            이더리움 TPS: 20  
-            Klaytn TPS: 3000 
-            
-        Block Interval
+<br>Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
+        <br>확장성을 알아보기 위해서는 두가지 조건이 있다. TPS + Block Interval 
+        <br>TPS: 초당 몇개의 거래를 처리할 수 있는지 
+        <br>Block Interval: 블록 생성 간격 - 블록이 어느정도 시간을 기준으로 만들어지는가 
+<br>
+<br>        TPS 
+<br>            Visa TPS: 1700 
+<br>            비트코인 TPS: 7 (현실적으로는 2개에서 3개) 
+<br>            이더리움 TPS: 20  
+<br>            Klaytn TPS: 3000 
+<br>           
+<br>        Block Interval
             비트코인: 10분 
             이더리움: 15초 ~ 20초
             Klaytn: 1초 
@@ -152,75 +155,12 @@ date:   2019-07-09 11:36:36 +0530
         
  
 
------------------------- BApp 실습 ------------------------
-
-BApp = Blockchain Application 
-    3초안에 맞추면 무료로 0.1 Klay 지급 
-
-    로그인 방식이 특이하다
-        Key Store과 비밀번호를 통해서 로그인 
-    
-    Contract주소와 이벤트 잔액을 공개함으로써 투명성을 보장
-
-    아더리움의 web3.js 와 비슷한 클레이튼의 caver.js를 이용하며
-    
-    스마트컨트랙트 언어로 solidity를 지원한다. 
-
-    트러플 프레임워크를 사용한다. 
-
-    Tools 
-        Smart Contract 테스트를 위한 IDE를 사용하고 
-        계정관리를 위한 Wallet 
-        트랜잭션 조회를 위한 Scope 검색 엔진을 사용 
-
-Klayton Wallet & 계정관리 
-    블록체인 네트워크를 이용하기 위한 계정을 만들어야한다 그게 Wallet 
-    https://baobab.wallet.klaytn.com/
-    여기서 만든 계정은 Testnewtork 여기서 사용하는 klay는 실제 가치가 없다.
-
-    KeyStore file , 비밀번호 만들기 
-    비밀번호 입력하고 keyStore 파일 다운로드 한다 
-
-    트랜잭션 서명을 위한 Private Key를 다른데다가 저장해야한다. 
-
-    Gas price
-        합의 노드들에게 트랜잭션 처리 비용을 내는것 이더리움과는 다르게 고정적이다 
-    Gas Limit 
-        트랜잭션 처리 한도 비용을 말한다. 무한반복문같은 작업을 막기 위한것 Gas Limit을 초과할경우 그 작업은 멈추게된다. 
-    
-    Ston은 클레이 화페 단위
-        peb 10^9을 말하고 klay는 peb의 10^18 
-
-Klayton IDE 
-    https://ide.klaytn.com/
-
-    Solidity를 이더리움 네트워크와 연결하는게 아니라 Klaytn 네트워크와 연결해서 쓰인다. 
-
-    DevNode - 개발용 테스팅을 위한것 계정을 임의로 만들어서 쓴다 
-
-    컨트랙으로 함수를 만들자  
-        컨트랙으로 klay 송금 
-        klay 잔고를 확인하는것 
-    
-    컨트랙 배포한담에 어떻게 쓰는건가 
-    컨트랙 소유자가 되는거
-    
-    (블록이 계속생성되면 네트워크에 괜찮은건가)
-scope 
-    klaytn 정보와 트랜잭션또느 컨트랙 정보들을 볼 수 있다  
-    https://baobab.scope.klaytn.com/
-
-환경설정 
-    Node.js 
-    NPM
-    트러플 프레임워크 
-    Vscode 
-    
-Represent에 대해서는 성균관대에서 했던 발표를보자. 
-jekyll 사용법 익혀서 github 블로그에 klayton 이용 서비스 올려보자 
 
 Reference: 
 https://m.blog.naver.com/PostView.nhn?blogId=ehdtmdcouple&logNo=221183650560&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+
 https://baobab.wallet.klaytn.com/
+
 https://ide.klaytn.com/
+
 https://baobab.scope.klaytn.com/
