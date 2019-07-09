@@ -88,8 +88,7 @@ categories: Klaytn Blockchain
 
         *main chain을 정하는 룰 Longest chain rule 이걸 악용할떄 51% 파워 컴퓨팅 능력을 가지면 된다는게 이게 뭔소리지  어짜피 연산은 알아서 해주는게 아닌가 
             다른 노드들에게 전파를 안하고 51%니까 자기들끼리 합의를 보고 연결시킨다는건가 
-
-        
+ 
     solidiity 지원 
 
     truffle 지원
@@ -315,11 +314,3 @@ https://m.blog.naver.com/PostView.nhn?blogId=ehdtmdcouple&logNo=221183650560&pro
 https://baobab.wallet.klaytn.com/
 https://ide.klaytn.com/
 https://baobab.scope.klaytn.com/
-
-
-
-[https://m.blog.naver.com/PostView.nhn?blogId=ehdtmdcouple&logNo=221183650560&proxyReferer=https%3A%2F%2Fwww.google.com%2F]
-[https://baobab.wallet.klaytn.com/]
-[https://ide.klaytn.com/]
-[https://baobab.scope.klaytn.com/]
-
