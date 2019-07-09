@@ -11,7 +11,7 @@ author: Youngerjesus
     word-break: break-word;">
 클레이튼 기존 블록체인 플랫폼의 약점 
 
-<img src="{{ "/assets/img/fork.png" | relative_url }}" alt="">
+<img src="{{ "/assets/img/scalability.png" | relative_url }}" alt="">
 Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
     확장성을 알아보기 위해서는 두가지 조건이 있다. 
     TPS + Block Interval    
@@ -43,7 +43,7 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
         - 256GB RAM 
         - 1년치의 데이터 약 14TB 저장 
         - 10G 네트워크
-
+<img src="{{ "/assets/img/Finality.png" | relative_url }}" alt="">
     Finality - 변경 불가능한 최종적인 상태를 말하고 블록이 Final 하다라는건 블록에 담긴 거래가 바뀔 수 없다는 걸 보증한다.
         내가 어떤 상품을 살라고 결제를 헀는데 결제가 안 되었을수도 있다라는 말이다.  
          
@@ -55,7 +55,8 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
 
         궁금한게 비트코인과 이더리움에서 내가 요청한 트랜잭션이 블록에 담기게 되고 이 블록이 메이저 체인에 연결되었는지를 확인하는 방법이 없는건지 궁금하다
         (메이저 체인에 연결되었다라는건 최종성이 보장되었다 라는 뜻이니까)
-       
+
+<img src="{{ "/assets/img/fork.png" | relative_url }}" alt="">
     Fork - 블록들의 연결이 두개 이상으로 갈라지는 걸 말한다. 
         이더리움과 블록체인의 작업증명 방식(pow)
             블록체인에 경쟁적으로 블록을 추가하기 위해 문제를 푼다.(Hash 값을 찾기 위해서 )
@@ -68,6 +69,7 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
         블록 생성을 알려주는 Proxy Node가 있어서 이 노드와 연결을 하면 바로 최신정보를 받을 수 있다  
 
 클레이튼 블록체인 
+<img src="{{ "/assets/img/consensus.png" | relative_url }}" alt="">
     합의 
         어떤 합의알고리즘을 사용해서 문제점을 해결하는지를 보겠다
         합의 알고리즘은 여러개가 있고 Public , Private에 따라서 다르다 
@@ -122,6 +124,7 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
             그렇지만 데이터를 분산시키고 신뢰를 높이기 위해서는 합의에 참여하는 노드의 수가 많을 수록 좋다 
             이 두가지 요구사항을 고려했을떄 클레이튼은 각 합의 라운드마다 CN의 전체 집합중에서 서브 세트를 무작위로 선택함으로써 신뢰성도 높이고 처리하는 속도도 빠르게 한다  
     
+   <img src="{{ "/assets/img/cnn pnn enn.png" | relative_url }}" alt=""> 
     네트워크 구조 
         이 클레이튼 네트워크 축소판을 보면 
         전체 네트워크안에 Core Cell Newtork가 존재하고 Core Cell을 둘러싸는 Endpoint Node Network가 존재한다. 이렇게 클레이튼은 단일 네트워크가 아닌 two Layer Architecture로 이뤄져있다.
@@ -146,7 +149,7 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
         
         CN BootNode, PN BootNode EN BootNode들은 새로 들어온 노드들이 등록을 하는곳이고 
         또 다른 노드들과 연결할 수 있도록 도움을 주는 곳이다. 클레이튼에서 운영하느 노드들이다. 
-             
+<img src="{{ "/assets/img/klaytn_service_chain.1.png" | relative_url }}" alt=""> 
     서비스 체인 
         클레이튼의 서비스 체인은 메인넷과 연결되는 독립적으로 운영되는 블록체인이다 
         확장성을 기반으로 나온 아이디어인데  독립된 서비스 공간을 구축하고 필요할 때 메인 네트워크에 신뢰를 얻는다라고 알려져있다  
