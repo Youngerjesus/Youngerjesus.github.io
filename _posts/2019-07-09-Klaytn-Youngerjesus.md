@@ -11,7 +11,7 @@ author: Youngerjesus
     word-break: break-word;">
 클레이튼 기존 블록체인 플랫폼의 약점 
 
-<img src="{{ "/assets/img/scalability.png" | relative_url }}" alt="">
+<img src="{{ "/assets/img/scalab.png" | relative_url }}" alt="">
 Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
     확장성을 알아보기 위해서는 두가지 조건이 있다. 
     TPS + Block Interval    
@@ -43,7 +43,7 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
         - 256GB RAM 
         - 1년치의 데이터 약 14TB 저장 
         - 10G 네트워크
-<img src="{{ "/assets/img/Finality.png" | relative_url }}" alt="">
+<img src="{{ "/assets/img/final.png" | relative_url }}" alt="">
     Finality - 변경 불가능한 최종적인 상태를 말하고 블록이 Final 하다라는건 블록에 담긴 거래가 바뀔 수 없다는 걸 보증한다.
         내가 어떤 상품을 살라고 결제를 헀는데 결제가 안 되었을수도 있다라는 말이다.  
          
