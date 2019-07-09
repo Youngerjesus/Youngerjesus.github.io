@@ -305,10 +305,7 @@ scope
     NPM
     트러플 프레임워크 
     Vscode 
-    
-Represent에 대해서는 성균관대에서 했던 발표를보자. 
-jekyll 사용법 익혀서 github 블로그에 klayton 이용 서비스 올려보자 
-
+        
 Reference: 
 https://m.blog.naver.com/PostView.nhn?blogId=ehdtmdcouple&logNo=221183650560&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 https://baobab.wallet.klaytn.com/
