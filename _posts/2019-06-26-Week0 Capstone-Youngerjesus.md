@@ -3,7 +3,7 @@ layout: post
 title:  "Week 0 Capstone Design  "
 date:   2019-06-25 15:46:00  +0530
 commetns: true 
-categories: Capstone Design   
+categories: Capstone   
 ---
 
 프로젝트 한 줄 요약 

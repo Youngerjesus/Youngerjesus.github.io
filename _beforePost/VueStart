@@ -1,0 +1,71 @@
+Vue는 뭔가 
+    MVVM 패턴의 뷰모델 레이어에 해당하는 뷰(DOM)단 라이브러리
+    (View 사용자에게 보여지는 부분 )
+    (자바스크립트로 태그나 돔을 조작하는 부분) 
+
+    Vue 구조도 
+        View - ViewModel(DomListening, DataBinding) - Model
+        DomListening이 키보드 입력, 마우스클릭 이벤트를 DomListener가 받고 그걸
+        모델에게 넘겨주는 것 
+        DataBinding이 바뀐 부분이거나 돔에서 rendering하는 부분을 가지고오는것 
+        (자바스크립트의 데이터가 바뀔떄 databinding을 통해서 뷰에게 넘겨줘서
+        바뀌는 부분을 보여준다)
+
+
+기존 웹 개발 (HTML + CSS + JS not React , vue angular )
+    html head body 입력이 많다라는거지 필요 태그들읆 만들어줘야한다.
+    (줄이는 방법은 충분히 많아 이게 문제가아니야 내가볼떄는 ) 
+    (! + tab으로 필요한 태그 만드는거 가능 )
+
+    <div>  HTML 태그를 만들어야한다 
+    <script>  js 태그를 만들어야한다.
+    script단에서 html 요소를 가져오고 조작하는게 가능하다(innerHTML메소드를 통해서 )
+    (VS CODE에서 html하나로 실행하는 방법은 Open Live Server를 통하면되네)
+    JS에서 태그의 정보를 접근에서 바꿨을때 꼭 해줘야하는 작업이 innerHTML을 해줘야지
+    화면이 갱신된다. (불필요한 작업 변수만 바꿔도 갱신되어야하는데 그게 아니다)
+
+
+뷰 인스턴스
+    뷰로 개발할떄 필수로 생성해야하는 단위
+    new Vue({})를 말한다. 
+        개발자도구 console 탭에서 vm을 치면 
+        인스턴스를 볼 수 있다. 
+
+    인스턴스를 생성하고나면 변수에 담을 수 있다. 
+        var vm = new Vue({});
+        el: 지정을 해줘야지 vue를 사용할 수 있다. 
+        
+
+    인스턴스가 제공되는것 
+
+전역 컴포넌트와 지역컴포넌트
+    layout을 잡는거는 지역 컴포넌트
+    전역컴포넌트는 계속해서 사용하는 것 다른 컴포넌트에서도 이걸 계속 사용하는것
+    사용성의 유무로 컴포넌트를 쓰면될거같다. 
+    지역 컴포넌트도 계속해서 관계를 만드는 것 
+
+컴포넌트 통신방법
+    컴포넌트 자체가 홤ㄴ의 영역을 구분하며 개발하는 뷰의 기능 
+    각 컴포넌트는 데이터 유효범위가 있다 (각각 데이터를 갖는다)
+    상위 컴포넌트가 하위 컴포넌트에 props를 전달하고 아래에서는 위에로 이벤트를 발생시킨다.  
+
+    통신 규칙이 필요한경우 
+
+    props   
+        app-header: 하위 컴포넌트 이름 
+        <app-header v-bind:프롭스 속성 이름="상위 컴포넌트 데이터 이름"> </app-header> 
+
+
+        new Vue({
+            el: '#app',
+            components: {
+                'app-header': {
+                    template: 
+                    props: ['propsdata']; 
+                }
+            }
+        })
+
+        props를 methods로 전달하는거 
+        funciton으로 
+        
