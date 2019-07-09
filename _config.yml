@@ -1,6 +1,6 @@
-title: Youngerjesus
+title: Your awesome title
 author: GitHub User
-email: yjh930919@gmail.com
+email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -9,19 +9,18 @@ show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-remote_thema : thelehhman/plainwhite-jekyll
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Yeo Jeong Min 
-  tagline: Blockchain Developer. 
+  name: Adam Denisov
+  tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
     twitter: thelehhman
-    github: Youngerjesus 
+    github:  thelehhman
     linkedIn: in/thelehhman
     rss: rss
     # dribbble: jekyll
@@ -54,5 +53,4 @@ theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
-  - Youngerjesus 
 #  - jekyll-feed
