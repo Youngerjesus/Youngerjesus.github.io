@@ -6,10 +6,10 @@ tags: [klaytn, blockchain]
 author: Youngerjesus
 
 ---
-<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-<pre style="white-space: pre-line;
+
+<pre style="white-space: pre;
     word-break: break-word;">
-<p>클레이튼 기존 블록체인 플랫폼의 약점 
+클레이튼 기존 블록체인 플랫폼의 약점 
 Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
     확장성을 알아보기 위해서는 두가지 조건이 있다. 
     TPS + Block Interval    
@@ -158,8 +158,6 @@ Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는�
         클레이튼의 서비스체인안에서는 트랜잭션 수수료를 안받게 할 수 있고 자기가 원하는 환경을 구축하는게 가능하다.      
         
  
-
-</p>
 Reference: 
 https://m.blog.naver.com/PostView.nhn?blogId=ehdtmdcouple&logNo=221183650560&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 
