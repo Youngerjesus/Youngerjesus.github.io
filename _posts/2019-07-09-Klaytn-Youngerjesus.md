@@ -10,8 +10,8 @@ author: Youngerjesus
 <pre style="white-space: pre;
     word-break: break-word;">
 클레이튼 기존 블록체인 플랫폼의 약점 
-<img  src="{{ "/assets/scalability.jpeg"  | relative_url }} }}" > 
-<img  src="{{ "/assets/fork.png"  | relative_url }} }}" > 
+
+<img src="{{ "/assets/fork.png" | relative_url }}" alt="">
 Scalability(확장성) - 얼마나 많은 일을 신속히 처리할 수 있는지가 확장성이다 
     확장성을 알아보기 위해서는 두가지 조건이 있다. 
     TPS + Block Interval    
