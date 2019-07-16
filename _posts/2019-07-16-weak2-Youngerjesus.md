@@ -33,7 +33,7 @@ categories: blockchain uPort capstone
         음주 측정기 
             the score is above the pre-configured threshold, the processor will generate the signature which will be passed via a direct register write, and sent to the blockchain. 
 
-어떻게 Digital ID Creation을 만드는가 
+<code> 어떻게 Digital ID Creation을 만드는가 </code>
     To create a digital ID that is used in the blockchain-based system, 
     The user needs to bring his/her government issued ID and a smart-phone with biometric authentication mechanism to the identity creator
     
@@ -61,7 +61,7 @@ categories: blockchain uPort capstone
 
     If Protocol 1 succeeds, u’s digital identity that can be used in the blockchains system for other users to recognize u. 
 
-Contract  (controller -> proxy -> register ) 
+<code> Contract  (controller -> proxy -> register ) </code>
     an instantiation of the controller with a link to the just created public key is made. 
     After that a new proxy is created with a link to that controller instance 
     and only that controller instance is able to invoke the proxy’s functions.
@@ -83,7 +83,7 @@ Contract  (controller -> proxy -> register )
 
 
 
-Major operations of digital ID management include adding a new digital identity and disabling an existing identity.
+<code> Major operations of digital ID management include adding a new digital identity and disabling an existing identity. </code>
         we denote the group of nodes that are responsible for digital ID management as Gm)
         1. Adding a new digital identity
             After cert is created, it is submitted to the blockchain system, and nodes in Gm run a consensus protocol to determine whether it should be accepted in the blockchain or not
@@ -107,7 +107,7 @@ Major operations of digital ID management include adding a new digital identity 
 
 
     
-Protocol 2 Use of digital ID - proxy에서 a global register contract를 이용해서 블록체인 상에 음주 측정 기록을 저장하는 것
+<code> Protocol 2 Use of digital ID - proxy에서 a global register contract를 이용해서 블록체인 상에 음주 측정 기록을 저장하는 것 </code>
     Require: The user u with smart phone(ph), the blockchain system bc.
         u want to submit a transaction tr to blockchain; 
         u unlock ph using his/her biometric information
@@ -145,7 +145,7 @@ Protocol 2 Use of digital ID - proxy에서 a global register contract를 이용�
 
 
 
-*TrustZone
+<code>TrustZone</code>
     The proposed system can be used in any smart phone with a processor that works with fingerprint biometric sensor. In order to be “finger-print-enabled”, 
     the processor must be an ARMv6KZ or later architecture
     The reason is that previous ARM architecture does not have TrustZone implemented. 
@@ -157,7 +157,7 @@ Protocol 2 Use of digital ID - proxy에서 a global register contract를 이용�
 
 
 
-Biometric Authentication Mechanism on Smart-Phones
+<code> Biometric Authentication Mechanism on Smart-Phones </code>
     각종 스마트폰에 인증이 적용되려면 생체인증 하드웨어를 각 기기에 설치해야 한다.
     (In order for authentication to be applicable to various smart-phones, biometric authentication hardware needs to be installed on each device)
         
