@@ -4,14 +4,14 @@ title:  "Week 2 capstone Identity "
 date:   2019-07-09 11:36:36 +0530
 tags: [identity, blockchain, Identity Management,uPort]
 author: Youngerjesus
-
+categories: blockchain uPort capstone 
 ---
 
 <pre style="white-space: pre;
     word-break: break-word;">
 <img src="{{ "/assets/img/measure.png" | relative_url }}" alt="">
 
-the following major requirements
+<strong> the following major requirements </strong> 
     Security, Low cost, Portable 
     
 BlockID + uPort 
