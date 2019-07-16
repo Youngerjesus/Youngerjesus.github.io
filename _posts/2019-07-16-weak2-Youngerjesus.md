@@ -43,7 +43,7 @@ categories: blockchain uPort capstone
 
     u sends id to c;  -  버스 기업의 회원임을 나타내는 증거(신분증, 사진)
     
-    c checks  -   (버스기업의 데이터베이스에서 확인하겠지) 
+    c checks  -   
         • cdt1: the validity of id() ;
         • cdt2: consistency of id() and u; if cdt1 = cdt2 = true then  
 
