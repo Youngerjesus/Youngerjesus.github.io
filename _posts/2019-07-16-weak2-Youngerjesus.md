@@ -11,10 +11,10 @@ categories: blockchain uPort capstone
     word-break: break-word;">
 <img src="{{ "/assets/img/measure.png" | relative_url }}" alt="">
 
-<strong> the following major requirements </strong> 
+<code> the following major requirements </code> 
     Security, Low cost, Portable 
     
-BlockID + uPort 
+<code> BlockID + uPort </code>
     정부 발급 ID로부터 디지털 ID를 구성하여 블록체인 기반 트랜잭션 시스템에 대한 음주 측정을 올바르게 수행하는 데 도움이 된다.
     the Identity creattion component는 사용자가 사용할 수 있는 디지털 ID 생성할 수 있고 the Identity Management 컴포넌트는 발급된 디지털 ID의 사용을 감시할 책임이 있다.
 
@@ -91,8 +91,6 @@ Major operations of digital ID management include adding a new digital identity 
         2. Disabling an existing identity
             In case a user loses his/her private key sk that is stored in the smart-phone, he/she can submit a request transaction to the blockchain to ask to revoke correspon- ding cert
         
-        (여기에 Recovery 역할을 하는 부분도 )
-
         3. Recovering a digital Identity
             Because the private key is only stored on the user’s mobile phone which can get lost, 
             uPort has a system that enables its users to regain control of their identity with a different key)
