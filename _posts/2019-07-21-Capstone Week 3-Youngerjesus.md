@@ -72,16 +72,16 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
         JSON is a useful data serialization and messaging format 
         <div class="example">
         {
-            <span class="na"> "@context" </span>:  <span class="s2"> "https://w3id.org/did/v1",</span> 
-            <span class="na">"id" ,</span>:   <span class="s2"> "did : example : 123456789abcdefghi", </span>
-            <span class="na">"authentication" </span>:   <span class="s2"> [{
+            <span class="na"> "@context" : </span>  <span class="s2"> "https://w3id.org/did/v1",</span> 
+            <span class="na">"id" :</span>   <span class="s2"> "did : example : 123456789abcdefghi", </span>
+            <span class="na">"authentication" : </span>:  <span class="s2"> [{
                 // 다음과 같이 인증하는 데 사용됩니다. ... ... 
                 "id": "예 : 123456789abcdefghi # keys-1",
                 "type": "RsaVerificationKey2018",
                 "controller": "did : example : 123456789abcdefghi",
                 "publicKeyPem": "----- 공개 키 시작 ... 최종 공개 키 ----- \ r \ n"
             }], </span>
-            <span class="na">"service" </span>:   <span class="s2"> [{
+            <span class="na">"service": </span>   <span class="s2"> [{
                 // DID와 연결된 인증 가능한 자격 증명을 검색하는 데 사용됩니다.
                 "type": "VerifiableCredentialService",
                 "serviceEndpoint": "https://example.com/vc/"
@@ -106,7 +106,8 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
              <div class="no" style="display: none;" > (실제로 내가 DID 찾을 방법을 정하는 부분으로 현재는 비트코인, sovrin, IPFs, 등 9가지 등록방법이 정의되어있다) </div>
 
     <h4> @public Keys </h4>
-        "publicKey": [{
+    <div class="example">
+        <span class="na"> "publicKey": </span> <span class="s2"> [{
                 "id": "did:example:123456789abcdefghi#keys-1",
                 "type": "RsaVerificationKey2018",
                 "controller": "did:example:123456789abcdefghi",
@@ -121,20 +122,22 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
                 "type": "Secp256k1VerificationKey2018",
                 "controller": "did:example:123456789abcdefghi",
                 "publicKeyHex": "02b97c30de767f084ce3080168ee293053ba33b235d7116a3263d29f1450936b71"
-            }],
+            }],  </span>
         ...
-        }
+        } 
+    </div>
             공개키는 디지털 서명, 암호화 및 기타 암호화 작업에 사용되며 Service end point와의 보안 통신 설정을 하는데 사용된다 
              <div class="no" style="display: none;" > 
              (publicKey 속성의 값은 공개 키의 배열이어야하며 이 공개키 배열은 중복항목을 포함해서는 안됩니다 여기서의 공개키는 인증에서 삽입되거나 참조 될 수 있습니다 )
              </div>
 
     <h4> Authentication </h4>
+    <div class="example">
             {
-                "@context": "https://w3id.org/did/v1",
+                <span class="na"> "@context": </span> <span class="s2"> "https://w3id.org/did/v1",</span>
                 "id": "did:example:123456789abcdefghi",
                 ...
-                "authentication": [
+                <span class="na"> "authentication": </span >  <span class="s2">[
                     // this method can be used to authenticate as did:...fghi
                     "did:example:123456789abcdefghi#keys-1",
                     // this method can be used to authenticate as did:...fghi
@@ -148,13 +151,15 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
                     "controller": "did:example:123456789abcdefghi",
                     "publicKeyBase58": "H3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
                     }
-                ],
+                ],</span>
                 ...
             }
+        </div>
             인증은 DID subject(사용자)가 DID와 관련되어 있다는 것을 암호롲 증명하는 매커니즘이다 
     <h4> Service Endpoint </h4>
+    <div class="example">
             {
-                "service": [{
+                <span class="na"> "service":</span> <span class="s2">[{
                     "id": "did:example:123456789abcdefghi#openid",
                     "type": "OpenIdConnectVersion1.0Service",
                     "serviceEndpoint": "https://openid.example.com/"
@@ -191,8 +196,9 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
                     "id": "did:example:123456789abcdefghi#authpush",
                     "type": "DidAuthPushModeVersion1",
                     "serviceEndpoint": "http://auth.example.com/did:example:123456789abcdefg"
-                }]
+                }]</span>
             }
+        </div>
             service end point는 해당 주체에대한 service end point의 검색을 가능하게 하는것 
 
 <h3> Evaluation </h3>
