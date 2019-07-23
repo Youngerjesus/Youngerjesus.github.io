@@ -22,7 +22,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-kerning: normal; 
 	font-feature-settings: "kern" 1; 
-
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 900;
@@ -35,7 +34,7 @@ img, embed, object, video {
 code {
 	padding: 1px 5px; 
 	background-color: #000;
-    color: #fff;
+    color: #000;
     font-family: 'menlo', monospace;
     font-size: 15.75px;
 }
