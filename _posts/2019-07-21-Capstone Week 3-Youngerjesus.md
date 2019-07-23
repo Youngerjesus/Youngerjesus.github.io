@@ -234,6 +234,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
     HD 키를 사용한다면 identity Management system에서는 사용적합성의 문제가 있다. DID에서 사용자의 public key는 DDO의 IPFS 헤시에대한 
     매핑은 Ethereum smart contract에 의해 저장될 건데 워낙 많이 공개키가 있을 수 있으니까 얘가 어디에 매핑되어있는지를 알 고 있어야한다. 
 
+<img src="{{ "/assets/img/HDKEY.png" | relative_url }}" alt="">
 <h3> Hierarchical Deterministic Key Derivation </h3>
         Path Levels - 마스터 키 쌍은 BIP0032에 따라 개인키를 계층적으로 새엇ㅇ하고 관리할 수 있도록 한다 
         
@@ -284,6 +285,7 @@ shoCard는 더좋은 블록체인이 나온다면 즉 새로운 더 빠르고 �
 )
 </div>
 
+<img src="{{ "/assets/img/SHOCARD.png" | relative_url }}" alt="">
 <h3> The shoCard Architecture 
 • ShoCard SDKs 
 • ShoCard Service layer
@@ -316,6 +318,7 @@ The ShoCard Blockchain Adaptor abstracts the interface to the blockchain that ma
 so the ShoCard Service layer can remain efficient
 블록체인 인터페이스를 추상화해서 여러 블록체인을 사용하기 위한 것 
 
+<img src="{{ "/assets/img/HASH.png" | relative_url }}" alt="">
 <h4> Self-certification - 블록체인 상에 자기 신원을 저장하고 이게 나라는 걸 증명하는 것 </h4>
 사용자는 shoCard mobile application이 필요하며 asymmetric key pair을 만들어준다 
 대부분 일반적인 경우 사용자의 identity는 스마트폰과 같은 모바일 기기에 유지된다
@@ -389,6 +392,7 @@ shoStore 서버가 다운되면 인증을 하지 못하는 문제가 있다.
     (이론상으로는 하드 드라이브로 간주할 수 있지만, 꼭 스마트폰 기기는 아니다. 노트북도 되고, 각자 쓰는 서버든 드롭박스와 같은 서버 제공자든 데이터 라커를 놓을 수 있다. 
     물론 드롭박스나 구글 드라이브 등의 서버 제공자가 데이터 라커 속 프라이버시 정보를 들여다볼 순 없다. 완전히 암호화하기 때문이다)
     </div>
+    <img src="{{ "/assets/img/GAIA.png" | relative_url }}" alt="">
     <div class="no" style="display: none;" >
     (gaia 찾기 내가 어떤 이름에 대한 파일을 가져오고 싶다면 블록스택 코어에대한 단일 호출로 내가 찾을 파일에 대해서 라우팅 정보 파일을 가져오고 
     이 라우팅 파일에서 gaia URL을 가져와 스토로지 백엔드에 연결한다 엑세스 권한이 있는경우 파일을 가져오는게 가능하다)
