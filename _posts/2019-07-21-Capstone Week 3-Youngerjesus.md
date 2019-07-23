@@ -7,6 +7,38 @@ author: Youngerjesus
 categories: blockchain sovrin blockstack jolocom shoCard capstone 
 ---
 
+<h2 id="목차"> 목차 </h2>
+<ul>
+    <li> Sovrin  
+        <ul> 
+            <li> overview </li>
+            <li> DID </li>
+            <li> Evaluation </li>
+        </ul>   
+    </li>
+    <li> jolocom 
+        <ul> 
+            <li> overview </li>
+            <li> HD Key </li>
+            <li> Evaluation </li>
+        </ul>   
+    </li>
+    <li> shoCard
+        <ul> 
+            <li> overview </li>
+            <li> The shoCard Archietecture </li>
+            <li> Third-party Certification </li>
+            <li> Evaluation </li>
+        </ul>   
+    </li>
+    <li> Blockstack 
+        <ul> 
+            <li> overview </li>
+            <li> gaia </li>
+            <li> Evaluation </li>
+        </ul>   
+    </li>
+</ul>
 <pre style="white-space: pre;
     word-break: break-word;">
 SOVRIN 
@@ -206,8 +238,9 @@ JOLOCOM
 
         Purpose - 신원 키 생성을 목적으로 했기 때문에 상수 73으로 설정된다 
 
-        context - 컨텍스트 필드는 키가 사용되는 컨텍스트를 (기본적으로 하나의 컨택스트만 정의되며 여기서는 서명 키 컨택스트로 간주된다 )
-
+        context - 컨텍스트 필드는 키가 사용되는 컨텍스트를  <div class="no" style="display: none;" > 
+        (기본적으로 하나의 컨택스트만 정의되며 여기서는 서명 키 컨택스트로 간주된다 )
+        </div>
         entity - entity는 키가 더 차별화 될 수 있는 다음 경로 깊이를 정의한다 
             {m / 73’ / signing-key’ / social-media’}
 
@@ -246,7 +279,7 @@ shoCard는 더좋은 블록체인이 나온다면 즉 새로운 더 빠르고 �
 </div>
 
 The shoCard Architecture
-• ShoCard SDKs (shoCard platform은 이렇게 구성되어있다)
+• ShoCard SDKs 
 • ShoCard Service layer
 • ShoCard SideChain
 • blockchain caches
@@ -358,7 +391,8 @@ Blockstack
     블록스택은 7만개 이상의 도메인 이름이 등록되어 있다고 한. 
 
 Blockstack 목표
-블록스택은 개발자들이 쉽게 디앱을 개발할 수 있는 블록체인 플랫폼을 만들고자 한다. (ID관리는 블록스택의 목표가 아니라 구현은 설명될 수 없다)
+블록스택은 개발자들이 쉽게 디앱을 개발할 수 있는 블록체인 플랫폼을 만들고자 한다. 
+ <div class="no" style="display: none;" > (ID관리는 블록스택의 목표가 아니라 구현은 설명될 수 없다) </div>
 블록스택의 CEO인 무니브 알리는 컴퓨팅의 다음 시대를 개척하는 게 블록스택의 최대 목표라고 말했다. 
 IBM이 개인용 컴퓨터를 개발하면서 컴퓨터 개발의 시대가 시작됐으며 이후 마이크로소프트의 데스크탑 시대와 구글의 클라우드 시대가 이어졌다고 덧붙여 말했다.
 그는 다음 시대는 탈중앙화 시대가 될 것이고 그 시대를 위한 플랫폼을 개발하는 게 블록스택이 하는 일이라고 설명했다. 
