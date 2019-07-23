@@ -31,6 +31,12 @@ img, embed, object, video {
 	max-width: 100%;
 }
 
+.example {
+	text-transform: uppercase;
+    color: #fff;
+    min-width: 7.5em;
+    display: block;
+}
 code {
 	padding: 1px 5px; 
 	background-color: #000;
@@ -99,7 +105,7 @@ li {
 	color: #a6e22e; 
 }
 .s2 {
-	color: #e6db74; 
+	color: #000; 
 }
 main {
 	margin: 0 90px;
