@@ -105,8 +105,8 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
             DID 문서를 조회하기 위한 고유 ID다 
              <div class="no" style="display: none;" > (실제로 내가 DID 찾을 방법을 정하는 부분으로 현재는 비트코인, sovrin, IPFs, 등 9가지 등록방법이 정의되어있다) </div>
 
-    <h4> @public Keys </h4>
-    <div class="example">
+        <h4> @public Keys </h4>
+ <div class="example">
         <span class="na"> "publicKey": </span> <span class="s2"> [{
                 "id": "did:example:123456789abcdefghi#keys-1",
                 "type": "RsaVerificationKey2018",
@@ -132,7 +132,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
              </div>
 
     <h4> Authentication </h4>
-    <div class="example">
+ <div class="example">
             {
                 <span class="na"> "@context": </span> <span class="s2"> "https://w3id.org/did/v1",</span>
                 "id": "did:example:123456789abcdefghi",
