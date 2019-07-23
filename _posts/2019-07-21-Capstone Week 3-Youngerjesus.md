@@ -89,14 +89,13 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
         }
         </div >
 
-    <h4> @context (Must) </h4>
+<h4> @context (Must) </h4>
         {
            "@context": "https://w3id.org/did/v1"
         }
         대화의 context를 정하는 부분이다 
          <div class="no" style="display: none;" > (두 소프트웨어 시스템이 데이터를 교환할떄 서로 이해하는 프로토콜을 사용해야한다 그 부분을 정하는 곳) </div>
-
-    <h4> @id </h4>
+<h4> @id </h4>
         {
           "id": "did:example:21tDAKCERh95uGgKbJNHYp"
         }
@@ -105,7 +104,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
             DID 문서를 조회하기 위한 고유 ID다 
              <div class="no" style="display: none;" > (실제로 내가 DID 찾을 방법을 정하는 부분으로 현재는 비트코인, sovrin, IPFs, 등 9가지 등록방법이 정의되어있다) </div>
 
-        <h4> @public Keys </h4>
+<h4> @public Keys </h4>
  <div class="example">
         <span class="na"> "publicKey": </span> <span class="s2"> [{
                 "id": "did:example:123456789abcdefghi#keys-1",
@@ -131,7 +130,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
              (publicKey 속성의 값은 공개 키의 배열이어야하며 이 공개키 배열은 중복항목을 포함해서는 안됩니다 여기서의 공개키는 인증에서 삽입되거나 참조 될 수 있습니다 )
              </div>
 
-    <h4> Authentication </h4>
+<h4> Authentication </h4>
  <div class="example">
             {
                 <span class="na"> "@context": </span> <span class="s2"> "https://w3id.org/did/v1",</span>
@@ -228,9 +227,9 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
     </div>
 
     HD 자식 키의 프로비저닝을 통해 통합 된 인적 / 기계 신원을위한 IoT 장치의 소유권 모델링을 가능하게하여 Jolocom 신원 사용자에게 진정으로 모든 속성을 반영한 본격적인 분산 형 디지털 신원을 구축 할 수있는 방법을 제공합니다
-     <div class="no" style="display: none;" >
+<div class="no" style="display: none;" >
      (그리고 그리고 이렇게 하위 자식 키를 여러개 만들 수 있으니까 IOT기기의 소유권을 Jolocom ID에 매핑할 때 좋다)
-    </div>
+</div>
 
     HD 키를 사용한다면 identity Management system에서는 사용적합성의 문제가 있다. DID에서 사용자의 public key는 DDO의 IPFS 헤시에대한 
     매핑은 Ethereum smart contract에 의해 저장될 건데 워낙 많이 공개키가 있을 수 있으니까 얘가 어디에 매핑되어있는지를 알 고 있어야한다. 
@@ -244,7 +243,8 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
 
         Purpose - 신원 키 생성을 목적으로 했기 때문에 상수 73으로 설정된다 
 
-        context - 컨텍스트 필드는 키가 사용되는 컨텍스트를  <div class="no" style="display: none;" > 
+        context - 컨텍스트 필드는 키가 사용되는 컨텍스트를
+<div class="no" style="display: none;" > 
         (기본적으로 하나의 컨택스트만 정의되며 여기서는 서명 키 컨택스트로 간주된다 )
         </div>
         entity - entity는 키가 더 차별화 될 수 있는 다음 경로 깊이를 정의한다 
@@ -256,7 +256,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
 
     Jolocom에서는 Identity attribute를 저장할떄는 여기서도 검증을 받았다는 verified credentials를 사용하며 지속적으로 사용할 것인지를
     구별해야하고 검증된 증명을 public으로 할 것인지 private으로 할 것인지를 정해햐한다 
-     <div class="no" style="display: none;" > 
+<div class="no" style="display: none;" > 
      (Private verified credentials은 엑세스제어가 필요하고 지속적으로 사용할떄는 자체 호스팅된 서버에 저장되어야하며 
     계속 사용할 필여가 없는 경우에는 사용자 장치에 저장된다  지속적인 가용성을 가진 public verified credentials같은 경우에는 
     IPFS와 같은 분산 스토로지에 저장해야한다. ) 
@@ -381,7 +381,7 @@ shoStore 서버가 다운되면 인증을 하지 못하는 문제가 있다.
     블록스택은 애플리케이션이 개인 데이터 잠금 장치와 상호 작용할 수 있도록 하는 사용자 제어 스토리지 시스템인 가이아(Gaia) 스토리지 시스템을 사용하여 
     사용자의 데이터를 제어할 수 있도록 하고있다. 
     사용자는 이러한 데이터 라커를 클라우드 제공자 또는 프라이빗 호스팅과 같은 기타 데이터 스토리지 옵션에 호스팅할 수 있다. 
-    <div class="no" style="display: none;" >
+<div class="no" style="display: none;" >
     (가이아의 데이터는 사용자가 제어하는 암호키에 의해 암호화되고 서명된다. 중요한 것은 사용자가 사용할 제공자를 제어한다는 것이다.)
     </div>
     소프트웨어는 사용자의 데이터 라커가 어디에 위치하든 필요에 따라 접근해 읽어 들인다.
@@ -426,7 +426,5 @@ Reference: https://sovrin.org/wp-content/uploads/Sovrin-Protocol-and-Token-White
 	https://medium.com/@adam_14796/understanding-decentralized-ids-dids-839798b91809
 	identity Management on the blockchain pdf 
 	https://w3c-ccg.github.io/did-spec/
-
-
 
 <pre>
