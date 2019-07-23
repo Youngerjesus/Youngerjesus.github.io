@@ -70,7 +70,8 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
         </div>
         JSON-LD 
         JSON is a useful data serialization and messaging format 
-        <div class="code"> 
+        <div class="example"> 
+            <code> 
         {
             <span class="na"> "@context" </span>:  <span class="s2"> "https://w3id.org/did/v1",</span> 
             <span class="na">"id" ,</span>:   <span class="s2"> "did : example : 123456789abcdefghi", </span>
@@ -87,6 +88,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
                 "serviceEndpoint": "https://example.com/vc/"
             }] </span>
         }
+            </code>
         </div>
 
     <h4> @context (Must) </h4>
