@@ -32,11 +32,11 @@ img, embed, object, video {
 }
 
 code {
-	background-color: #000; 
-	color: #fff;
-	font-family: 'menlo', monospace;
-	font-size: 16px; 
 	padding: 1px 5px; 
+	background-color: #000;
+    color: #fff;
+    font-family: 'menlo', monospace;
+    font-size: 15.75px;
 }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure {
@@ -95,6 +95,12 @@ li {
     word-break: break-word;
 }
 
+.na {
+	color: #a6e22e; 
+}
+.s2 {
+	color: #e6db74; 
+}
 main {
 	margin: 0 90px;
 	display: flex;
