@@ -70,23 +70,24 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
         </div>
         JSON-LD 
         JSON is a useful data serialization and messaging format 
-    
+        <code>
         {
-            "@context": "https://w3id.org/did/v1",
-            "id": "did : example : 123456789abcdefghi",
-            "authentication": [{
+            <span class="na"> "@context" </span>:  <span class="s2"> "https://w3id.org/did/v1",</span> 
+            <span class="na">"id" ,</span>:   <span class="s2"> "did : example : 123456789abcdefghi", </span>
+            <span class="na">"authentication" </span>:   <span class="s2"> [{
                 // 다음과 같이 인증하는 데 사용됩니다. ... ... 
                 "id": "예 : 123456789abcdefghi # keys-1",
                 "type": "RsaVerificationKey2018",
                 "controller": "did : example : 123456789abcdefghi",
                 "publicKeyPem": "----- 공개 키 시작 ... 최종 공개 키 ----- \ r \ n"
-            }],
-            "service": [{
+            }], </span>
+            <span class="na">"service" </span>:   <span class="s2"> [{
                 // DID와 연결된 인증 가능한 자격 증명을 검색하는 데 사용됩니다.
                 "type": "VerifiableCredentialService",
                 "serviceEndpoint": "https://example.com/vc/"
-            }]
+            }] </span>
         }
+        </code>
 
     <h4> @context (Must) </h4>
         {
