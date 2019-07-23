@@ -159,9 +159,8 @@ categories: blockchain uPort capstone
 
 <code> Biometric Authentication Mechanism on Smart-Phones </code>
     각종 스마트폰에 인증이 적용되려면 생체인증 하드웨어를 각 기기에 설치해야 한다.
-    (In order for authentication to be applicable to various smart-phones, biometric authentication hardware needs to be installed on each device)
-        
-        Retina scanning(fingerprint 말고도 생체인식은 여러개가 잇다)
+   
+        Retina scanning
             Retina scanning has a low occur- rence of false positives and high processing speed based on Roberts’ research [12]. However, it also involves some disadvantages, e.g. low accuracy under an eye disease and high equipment cost. 
         
         Voice recognition

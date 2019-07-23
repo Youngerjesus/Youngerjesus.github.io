@@ -1,0 +1,37 @@
+In this section we will - if possible - compare the different sys- tems with each other by looking at their properties. Those properties are:
+1. Usage of a permissioned blockchain?
+2. Do they offer self-sovereign identities?
+3. Built-in incentives for the nodes that run the blockchain to stay honest?
+4. Who can use the identities and who can verify them?
+5. Do they offer more than identity management?
+
+1. Usage of a permissioned blockchain?
+블록체인 권한이 있는 시스템은 소브린으로, 블록체인에서 작동하려면 노드를 인증해야 한다
+Jolocom과 uPort는 public blockchain인 Etherum Blockchain을 사용한다.
+shoCard와 BlockStack은 특정 블록체인 하나에 바인딩되지 않으므로 permissioned blockchain에서 실행할 필요가 없다.
+
+2. Do they offer self-sovereign identities?
+소브린, 졸로콤, uPort는 self-sovereign identities을 제공한다
+그러나 uPort는 사용자 특성에 문제가 있다. UPort를 사용하는 사람은 누구나ID가 그들을 볼 수 있다.
+이와는 대조적으로 쇼카드, 블록스택, self-sovereign을 제공한다고 주장하지는 않는다
+쇼카드는 self-sovereign 제공에 모순되는 데이터를 저장하는 데 사용되는 중앙 권한(shoStore 서버)을 가지고 있기 때문에 
+사용자들이 주체성을 가질 수 있도록 하지 않는다 (이 shoStore서버가 다운되면 신원을 제공할 수 없다)
+블록스택은 self-sovereign에 필요한 모든 기준을 충족하는 것 같다 하지만 ID관리는 블록스택의 초점이 아니므로 구현은 설명될 수 없다
+
+3. 대부분 블록체인 실행 노드가 악의적인 행동을 하지 않도록 보상에 관한 것으로 장기적인 관점을 보는 것
+소브린은 검증된 노드만 합의에 참여하므로 블록체인 실행 노드가 악의적으로 축소될 위험이 있다 
+Jolocom과 uPort는 모두 노드에 에테르 형태의 채굴 보상을 제공하는 Etherum 블록체인을 사용한다
+ShoCard와 Blockstack은 다른 블록체인에서 작업할 수 있다 보상이 있는 블록체인으로 전환하면 된다 
+
+4. 소브린에서는 누구든지 신분을 만들 수 있고 인터넷에 접속할 수 있는 사람은 신원을 확인할 수 있다. 
+졸로콤은 누구든지 신원을 만들 수 있게 하며 졸로콤의 사용자 인터페이스를 사용하여 졸로콤의 신원을 확인할 수 있다. 
+uPort를 사용하면 모든 사람이 ID를 생성할 수 있으며, 모든 사람은 해당 요청의 서명을 확인함으로써 ID가 제기한 주장을 확인할 수 있다.
+쇼카드는 또한 모든 사람이 신원을 만들 수 있도록 해주지만, 그 검증은 사용 사례에 따라 일부 검증자를 통해 이뤄진다 (항공사라던지 은행이라던지)
+블록스택에서는 모든 사람이 신원을 가질 수 있지만, 각각의 이름이 이미 사용되어 있고 다른 이름을 사용해야 하는 경우가 발생할 수 있다.
+블록스택은 다른 동료와 선택된 당국이 이 정보를 확인할 수 있지만 특정 프로세스가 따로 정의되지는 않는다
+
+5. The identity management system 이상의 것을 시스템이 제공하는가에 관한 것이다. 
+identity management system 이상의 기능을 제공하는 유일한 시스템은 분산형 인터넷/DNS 시스템에 대한 접근방식을 가진 블록스택이다
+
+
+

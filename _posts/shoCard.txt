@@ -1,0 +1,78 @@
+shoCard
+shoCard는 블록체인 상의 신분관리와 여권이나 운전면허와 같은 이미 신뢰된 정보들과 결합한다
+shoCard는 다른 Identity management 시스템과는 달리 자체 서버를 사용해서 관련 정보들을 저장한다 
+이렇게 자기 서버를 둔다고 해서 shoCard가 이 정보들을 알 수 있는 방법은 없다 그 사람들만이 알 수 있는 정보로 a new symmetric key로 암호화 되기 때문에 
+ShoCard의 장점은 여러 블록 체인을 동시에 사용할 수 있고 필요할 경우 새 블록 체인을 추가할 수 있다는 것이다
+This is due to most other systems relying on one (specific) blockchain and would cease to exist if that blockchain would stop existing as well 
+or if it somehow got rendered useless by a new attack.
+
+한 public blockchain만 사용한다면 이 블록체인 네트워크 상황에 따라서 traffic이 증가하거나 transaction fee가 증가하는 문제가 생길 수 있다 (실제로 예전에 이런 문제가 있었다고 들었다)
+shoCard는 더좋은 블록체인이 나온다면 즉 새로운 더 빠르고 안전한 블록체인을 사용할 준비를 해 두는 것 왜냐하면 기존의 블록체인에 쓴 데이터는 영구적으로 실행이 가능하고 레코드는 불변한다 
+
+
+The shoCard Architecture
+• ShoCard SDKs (shoCard platform은 이렇게 구성되어있다)
+• ShoCard Service layer
+• ShoCard SideChain
+• blockchain caches
+• ShoCard Blockchain Adaptor 
+
+ShoCard SDKs
+ShoCard SDK는 다른 서비스를 신뢰하지 않도록 자신의 서버 또는 장치에서 로컬로 모든 검증 검사를 수행한다. 또한 블록체인 레코드를 독립적으로 검색하여 검증에 사용할 수 있다.
+
+ShoCard Service layer
+블록체인뿐만 아니라 서로 다른 애플리케이션과 서버 간의 안전한 통신 파이프라인으로 사용된다.
+안전한 통신 파이프라인 이라는 의미는 모든 메시지는 클라이언트에서 서명되고 다른 사람의 공개키로 암호화되서 shoCard 서비스는 절대로 데이터를 해독할 수 없다라는 걸 말한다
+
+ShoCard SideChain
+블록체인에 작성된 다양한 인증에대한 검증 코드를 저장하기 위한 수단으로 제공된다 public 블록체인은 storage가 제한적이고 확장성이 부족한 문제가 있다
+따라서 사이드 체인은 인증데이터를 보유하는데 사용된다 각각의 기록들은 해쉬되고 그 해시들은 20분 정도마다 작업증거로 블록체인에 쓰여진다.
+
+blockchain caches
+블록체인 로컬 복사본을 보관해서 더 빠르게 읽을수 있도록 캐쉬를 제공한다
+
+ShoCard Blockchain Adaptor
+The ShoCard Blockchain Adaptor abstracts the interface to the blockchain that maintains the proof of work, 
+so the ShoCard Service layer can remain efficient
+블록체인 인터페이스를 추상화해서 여러 블록체인을 사용하기 위한 것 
+
+블록체인이 1개로 제한이 된다면 이 블록체인 네트워크 상황에 따라서 traffic이 증가하거나 transaction fee가 증가하는 문제가 생길 수 있다 (실제로 예전에 이런 문제가 있었다고 들었다)
+기존의 블록체인에 쓴 데이터는 영구적으로 실행이 가능하고 레코드는 불변하니까 기존걸 쓰면서도 shoCard는 더좋은 블록체인이 나온다면 즉 새로운 더 빠르고 안전한 블록체인을 사용할 준비를 해 두는 것 
+
+
+Self-certification - 블록체인 상에 자기 신원을 저장하고 이게 나라는 걸 증명하는 것 
+사용자는 shoCard mobile application이 필요하며 asymmetric key pair을 만들어준다 
+대부분 일반적인 경우 사용자의 identity는 스마트폰과 같은 모바일 기기에 유지된다
+사용자의 신원은 먼저 정부 ID, 운전면허 또는 여권을 스캔하거나 얼굴 이미지, 홍채 스캔 또는 오디오와 같은 생체 인식 정보를 캡처하여 수집한다 
+이런 수집된 데이터는 개개인의 name/value fields로 분류되고 사용자의 개인키로 암호화 되어서 스마트폰에 유지된다.
+(이런건 다 비슷한거 같다)
+이 과정 후 각각의 name/value fields는 signature hash로 변하고 전체 레코드로 정리된다 그 후 The resulting hash는 사용자의 private key로 서명된 후
+블록체인에 저장된다 이걸 self-certification이라고 한다
+
+자신의 스마트폰에 있는  the clear-text value field and code와 a pointer to the self-certification records를 제공함으로써 블록체인 상에 저장된 
+record와 내가 가진 신원이 일치한다라는 걸 증명하고 public key를 제공함으로써 이게 내 것임을 보여준다 
+
+
+Third-party Certification - 제3자가 개인의 신분과 자격을 증명하고 검증하는 것 
+사용자는 자신의 Identity와 other information을 제3자와 공유할 수 있다 
+사용자는 일반적으로 공유하기로 선택한 데이터를 공개 키와 함께 전달하고 블록체인 자체 인증에 대한 포인터를 전달하고 제3자가 다음 중 하나를 통해서 정보를 얻는다 
+# an App that can scan her data
+# QR 코드를 통해서 공유할 수 있는 웹 사이트 
+# Bluetooth 장치 
+그 다음 정보를 받은 The verifyung entity는 사용자가 그 특정 정보를 소유하고 있는지 검사한다 검사가 완료되면 제3자는 사용자를 인증한다
+이게 뭐냐면 검증 프로세스가 이뤄졌다라는걸 문서화해서 전체 프로세스를 반복할 필요 없이 향후에 참조할 수 있도록 하는 것 
+
+Evaluation
+ShoCard website에서는 shoCard를 이렇게 말한다.  
+”It’s the one identity verification system that works the way consumers and businesses need it to for security, privacy,
+ and always-on fraud protection”
+ 소비자와 기업을 위한 보안과 프라이버시를 위해서 blockchain identity management 시스템을 사용한다라고 
+
+내가 등록한 신원정보를 바탕으로 어떤 기업에서 인증을 받으면 서비스를 이용할 수 있고 다음에 이용할떄는 이전에 통과했던 인증을 재사용할 수 있는 identity management 시스템같다 
+
+단점은 ShoCard 시스템에서의 기업은 모든 사용자에 대한 정보를 인증할 수 있기 때문에 이 기업을 사용자가 신뢰할 필요가 있다. 우리가 잘 알고 있는 기업의 경우에는
+신뢰하는게 가능하지만 들어보지 못한 곳에 신뢰하기는 어렵다  
+shoStore 서버가 다운되면 인증을 하지 못하는 문제가 있다.
+
+장점은 블록체인 기술을 이용하지만 블록체인에 의존적이지 않다. 새롭게 추가하는게 가능해서 
+A huge advantage of ShoCard is the fact that it can use multiple blockchains and change to new ones if it needs to. 
