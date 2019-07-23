@@ -48,7 +48,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
     </div>
     sovrin에서는 검증 가능한 클레임을 보다 쉽고 안전하게 표현, 교환 및 확인할 수 있고 그들이 어떤 정보를 공개하고 교환할것인지를 선택할 수 있다.
 
-    Sovrin [21]은 Permissioned distributed ledger 기술을 기반으로 구축된 공공 오픈 소스 네트워크로입니다 
+    Sovrin [21]은 Permissioned distributed ledger 기술을 기반으로 구축된 공공 오픈 소스 네트워크입니다 
    <div class="no" style="display: none;" >  참여하기 위해서는 Sovrin Foundation의 허가를 받아야만 한다는 소리다  
     허가를 받기만 하면 sovrin에서는 누구든지 신분을 만들 수 있고 인터넷에 접속할 수 있는 사람은 신원을 확인할 수 있다. 
    </div>
@@ -58,8 +58,8 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
     DID를 사용하는 이유는 DID는  (IP 주소 또는 전화 번호와 달리) 중앙 권한을 통해 발행할 필요가 없으며 영구적이고, 식별자를 만들 수 있기 때문입니다 
     ID 소유자는 그러한 식별자에 대한 완전한 통제권을 유지한다. (IP 주소 또는 전화 번호와 달리) </div>
     DID는 개방형 표준이라서  모든 블록체인에서 DID를 등록하고 해결하는 방법을 정의하는 할 수 있다.
-    이러한 DID는 ID 소유자의 각 공개 키(이 DID), ID 소유자가 공개하고자 하는 기타 정보 및 상호 작용에 필요한 네트워크 주소로 구성된 DID 문서 객체(DDO)로 블록체인(blockchain)에 배치된다.
-    <div class="no" style="display: none;" > (ID 소유자가 공개키를 통해서 자신이 드러내고자하는 정보를 DDO로 블록체인에 배치한다) </div>
+    이러한 DID는 ID 소유자의 각 공개 키(이 DID)와, ID 소유자가 공개하고자 하는 기타 정보 및 상호 작용에 필요한 네트워크 주소로 구성된 DID 문서 객체(DDO)로 블록체인(blockchain)에 배치된다.
+    <div class="no" style="display: none;" > (ID 소유자가 공개키와  자신이 드러내고자하는 정보 즉 DDO로 블록체인에 배치함으로써 자신의 신원을 드러낸다) </div>
     
 <h3> DID Technology </h3>
     DID는 a unique identifier 와 an associated DID Document의 두 가지다
@@ -69,7 +69,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
         DID Document는 JSON-LD 객체로서, 검색이 용이하도록 어떤 중앙 위치에 저장되어 있다.
         json-LD는 json을 사용해서 linked data를 인코딩하는 방식이다 
          <div class="no" style="display: none;" > 
-         (json과 유사한 방식으로 직렬화 하는게 가능하고 Linked-data가 웹상에 존재하는 데이터를 개별 URI로 식별하기 떄문에 JSON-LD를 사용한다)
+         (JSON-LD는 json과 유사한 방식으로 직렬화 하는게 가능하고 Linked-data가 웹상에 존재하는 데이터를 개별 URI로 식별하기 떄문에 JSON-LD를 사용한다)
         </div>
         JSON-LD 
         JSON is a useful data serialization and messaging format 
@@ -131,7 +131,7 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
             공개키는 디지털 서명, 암호화 및 기타 암호화 작업에 사용되며 Service end point와의 보안 통신 설정을 하는데 사용된다 
              <div class="no" style="display: none;" > 
              (publicKey property의 값은 공개 키의 배열로서 여러개 등록하는게 가능하다 대신에 중복항목을 포함해서는 안됩니다 
-             여기서의 공개키는 인증에서 삽입되거나 참조 될 수 있습니다 )
+             여기서의 공개키는 삽입되거나 참조를 통해 인증에 사용한다  )
              </div>
 
 <h4> Authentication </h4>
@@ -228,10 +228,10 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
     HD 키는 시드에서 생성되고 사용자가 제어권을 가지고 있으며 부모 키로부터 자식 키를 추가적으로 생성하는게 가능하다 
     시드만 알고 있다면 언제든지 복구가 가능하며 이를 통해 사용자는 익명성을 제공하기 위한 하위 신분을 여러개 생성할 수 있다
      <div class="no" style="display: none;" >
-    HD KEY가 아닌 여러개의 공개키 개인키를 가지고 있는것은 복구하는 과정에 비용이 많이 든다고 합니다 
+    HD KEY가 아닌 여러개의 공개키 개인키를 가지고 있는것은 복구하는 과정에 비용과 백업에 비용이 많이든다 
     </div>
 
-    HD 자식 키의 프로비저닝을 통해 통합 된I oT 장치의 소유권 모델링을 가능하게하여 Jolocom 신원 사용자에게 진정으로 모든 속성을 반영한 본격적인 분산 형 디지털 신원을 구축 할 수있는 방법을 제공합니다
+    HD 자식 키의 프로비저닝을 통해 통합 된IoT 장치의 소유권 모델링을 가능하게하여 Jolocom 신원 사용자에게 진정으로 모든 속성을 반영한 본격적인 분산 형 디지털 신원을 구축 할 수있는 방법을 제공합니다
 <div class="no" style="display: none;" >
      (HD KEY를 통해 하위 자식 키를 여러개 만들 수 있고 이것들을 각각 IOT기기의 소유권과 매핑시킬 수 있다)
 
@@ -305,7 +305,7 @@ ShoCard SDK는 다른 서비스를 신뢰하지 않도록 자신의 서버 또�
 <h4>ShoCard Service layer </h4>
 블록체인뿐만 아니라 서로 다른 애플리케이션과 서버 간의 안전한 통신 파이프라인으로 사용된다.
  <div class="no" style="display: none;" >
-(안전한 통신 파이프라인 이라는 의미는 모든 메시지는 클라이언트에서 서명되고 다른 사람의 공개키로 암호화되서 shoCard 서비스는 절대로 데이터를 해독할 수 없다라는 걸 말한다) 
+(안전한 통신 파이프라인 이라는 의미는 모든 메시지는 클라이언트에서 서명되고 다른 사람의 공개키로 암호화되서 shoCard 서버는 절대로 데이터를 해독할 수 없다라는 걸 말한다) 
 </div>
 
 <h4> ShoCard SideChain </h4>
@@ -339,7 +339,8 @@ record와 내가 가진 신원이 일치한다라는 걸 증명하고 public key
 
 <h4> Third-party Certification - 제3자가 개인의 신분과 자격을 증명하고 검증하는 것 </h4>
 사용자는 자신의 Identity와 other information을 제3자와 공유할 수 있다 
-사용자는 일반적으로 공유하기로 선택한 데이터를 공개 키와 함께 전달하고 블록체인 자체 인증에 대한 포인터를 전달하고 제3자가 다음 중 하나를 통해서 정보를 얻는다 
+사용자는 일반적으로 공유하기로 선택한 데이터를 공개 키와 함께 전달하고 블록체인 자체 인증에 대한 포인터를 제3자에게 전달한다
+제3자는 아래방법에 의해 전달받을 수 있다  
 # an App that can scan her data
 # QR 코드를 통해서 공유할 수 있는 웹 사이트 
 # Bluetooth 장치 
@@ -371,9 +372,10 @@ shoStore이라는 자체서버를 두기 때문에 서버가 다운되면 인증
     어떻게 대체하냐면 사용자 개별로 데이터 라커(Locker)를 가집니다 
     <div class="no" style="display: none;" >
     (애초에 데이터를 호스팅하지 않고 자기가 데이터를 가지고 있다가 필요할떄 공유하는 것을 말한다 )
-    이런 데이터 라커는 대기업이 사용자로부터 데이터를 뽑아갈 필요 없이 앱과 데이터는 그 사용자의 소유물이 되는 것이다
+    이런 데이터 라커는 대기업이 사용자로부터 데이터를 뽑아갈 필요 없이 앱과 
+    데이터는 그 사용자의 소유물이 되는 것이다
     </div>
-    블록스택에서의 ID는 ID를 등록할 때 유니버셜 ID, 일반 사용자 명(Universal User Name)을 얻는다. 블록스택에 있는 모든 앱에 이 사용자 명으로 로그인할 수 있다. 
+     
      <div class="no" style="display: none;" >
     (새 앱을 사용할 때마다 회원가입을 하지 않고, 동일한 사용자 ID가 블록스택의 모든 앱에 적용된다.) 
     </div>
@@ -385,15 +387,16 @@ shoStore이라는 자체서버를 두기 때문에 서버가 다운되면 인증
     블록스택은 중요한 정보만 블록체인에 담고, 블록체인상에 퍼블리시하지 않고 대부분은 오프체인으로 구성해 사용자 데이터 라커에 전송된다
 
     Blockstack은 어떠한 블록체인에서도 작업할 수 있으며, 블록스택 ID라고 하는 블록체인에 대한 ID기능도 제공한다.
+    블록스택에서의 ID는 ID를 등록할 때 유니버셜 ID, 일반 사용자 명(Universal User Name)을 얻는다. 블록스택에 있는 모든 앱에 이 사용자 명으로 로그인할 수 있다.
     Blockstack ID는 profile과  globally unique names으로 구성되며 사람, 회사, 웹 사이트, 소프트웨어 패키지 등에 등록할 수 있다. 
     각 profile은 public information뿐만 아니라 private information도 포함할 수 있으며, 둘 다 ID owner가 입력한다. 
     다른 동료 및 선택된 기관에서 이 정보를 검증할 수 있음
 
     블록스택은 애플리케이션이 개인 데이터 잠금 장치와 상호 작용할 수 있도록 하는 사용자 제어 스토리지 시스템인 가이아(Gaia) 스토리지 시스템을 사용하여 
     사용자의 데이터를 제어할 수 있도록 하고있다. 
-    사용자는 이러한 데이터 라커를 클라우드 제공자 또는 프라이빗 호스팅과 같은 기타 데이터 스토리지 옵션에 호스팅할 수 있다. 
+    사용자는 이러한 데이터를 클라우드 제공자 또는 프라이빗 호스팅과 같은 기타 데이터 스토리지 옵션에 호스팅할 수 있다. 
 <div class="no" style="display: none;" >
-    (가이아의 데이터는 사용자가 제어하는 암호키에 의해 암호화되고 서명된다. 중요한 것은 사용자가 사용할 제공자를 제어한다는 것이다.)
+    (가이아의 데이터는 사용자가 제어하는 암호키에 의해 암호화되고 서명된다. 중요한 것은 사용자가 제어한다는 것이다.)
     </div>
     소프트웨어는 사용자의 데이터 라커가 어디에 위치하든 필요에 따라 접근해 읽어 들인다.
      <div class="no" style="display: none;" >
@@ -411,7 +414,7 @@ shoStore이라는 자체서버를 두기 때문에 서버가 다운되면 인증
 
 Blockstack 목표
 블록스택은 개발자들이 쉽게 디앱을 개발할 수 있는 블록체인 플랫폼을 만들고자 한다. 
- <div class="no" style="display: none;" > (ID관리는 블록스택의 목표가 아니라서 구현은 설명될 수 없다)  블록스택은 The identity management system 이상의 것을 시스템이 제공할 수 있다</div>
+ <div class="no" style="display: none;" > (ID관리는 블록스택의 목표가 아니라서 구현은 설명될 수 없지만 구현에따라 블록스택은 The identity management system 이상의 것을 시스템이 제공할 수 있다</div>
 블록스택의 CEO인 무니브 알리는 컴퓨팅의 다음 시대를 개척하는 게 블록스택의 최대 목표라고 말했다. 
 IBM이 개인용 컴퓨터를 개발하면서 컴퓨터 개발의 시대가 시작됐으며 이후 마이크로소프트의 데스크탑 시대와 구글의 클라우드 시대가 이어졌다고 덧붙여 말했다.
 그는 다음 시대는 탈중앙화 시대가 될 것이고 그 시대를 위한 플랫폼을 개발하는 게 블록스택이 하는 일이라고 설명했다. 
