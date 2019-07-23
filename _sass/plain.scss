@@ -30,7 +30,12 @@ h1, h2, h3, h4, h5, h6 {
 img, embed, object, video {
 	max-width: 100%;
 }
-
+.example {
+	background-color: #E0CB52;
+	color: #000;
+    overflow: auto;
+    clear: both;
+}
 
 code {
 	padding: 1px 5px;
