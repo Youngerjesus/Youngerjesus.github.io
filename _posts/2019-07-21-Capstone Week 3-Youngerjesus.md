@@ -41,25 +41,24 @@ categories: blockchain sovrin blockstack jolocom shoCard capstone
 </ul>
 <pre style="white-space: pre;
     word-break: break-word;">
-SOVRIN 
+<h3> SOVRIN  </h3>
     Sovrin은 사용자가 a self-sovereign identity를 평생 동안 소유할 수 있도록 하고, 이를 저장하기 위해 중앙 당국에 의존하지 않는다는 것을 의미한다.
      <div class="no" style="display: none;" > 그리고 사용자가 그들을 관리할 수 있고 그들이 어떤 정보를 공개할 것인지 선택할 수 있다. 
     제3자가 웹 상에서 확인한 은행 계좌 정보, 교육 자격, 의료 데이터, 기타 종류의 기계 판독 가능한 개인 정보를 표현하는 것은 현재 어렵다. 이러한 종류의 데이터를 흔히 검증 가능한 청구라고 한다. 
     </div>
     sovrin에서는 검증 가능한 클레임을 보다 쉽고 안전하게 표현, 교환 및 확인할 수 있고 그들이 어떤 정보를 공개하고 교환할것인지를 선택할 수 있다.
 
-    Design  
-        Sovrin [21]은 Permissioned distributed ledger 기술을 기반으로 구축된 공공 오픈 소스 ID 네트워크로, 모든 사람이 이를 사용할 수 있으며, 이는 합의사항을 형성하는 허가된 DLT 노드가 되기 때문에 
-        Sovrin Foundation의 허가를 받아야 하기 때문이다
-        
-        sovrin ID는 decentralized identifiers (DID)를 사용하여 ID를 활성화하고 asym-metric cryptography를 사용하여 사용자에게 바인딩한다.
-        DID를 사용하는 이유는 DID는 중앙 권한을 발행할 필요가 없으며 사용자가 영구적이고, 전세계적으로 고유하며, 암호적으로 검증된 식별자를 만들 수 있도록 하며,
-        ID 소유자는 그러한 식별자에 대한 완전한 통제권을 유지한다.  <div class="no" style="display: none;"> (IP 주소 또는 전화 번호와 달리) </div>
-        DID는 개방형 표준이기 때문에 모든 블록체인에서 DID를 등록(작성)하고 해결(읽기)하는 방법을 정의하는 DID 방법을 생성할 수 있다.
-	    이러한 DID는 ID 소유자의 각 공개 키(이 DID), ID 소유자가 공개하고자 하는 기타 정보 및 상호 작용에 필요한 네트워크 주소로 구성된 DID 문서 객체(DDO)로 블록체인(blockchain)에 배치된다.
-         <div class="no" style="display: none;" > (ID 소유자가 공개키를 통해서 자신이 드러내고자하는 정보를 DDO로 블록체인에 배치한다) </div>
+    Sovrin [21]은 Permissioned distributed ledger 기술을 기반으로 구축된 공공 오픈 소스 ID 네트워크로, 모든 사람이 이를 사용할 수 있으며, 이는 합의사항을 형성하는 허가된 DLT 노드가 되기 때문에 
+    Sovrin Foundation의 허가를 받아야 하기 때문이다
     
-    DID Technology
+    sovrin ID는 decentralized identifiers (DID)를 사용하여 ID를 활성화하고 asym-metric cryptography를 사용하여 사용자에게 바인딩한다.
+    DID를 사용하는 이유는 DID는 중앙 권한을 발행할 필요가 없으며 사용자가 영구적이고, 전세계적으로 고유하며, 암호적으로 검증된 식별자를 만들 수 있도록 하며,
+    ID 소유자는 그러한 식별자에 대한 완전한 통제권을 유지한다.  <div class="no" style="display: none;"> (IP 주소 또는 전화 번호와 달리) </div>
+    DID는 개방형 표준이기 때문에 모든 블록체인에서 DID를 등록(작성)하고 해결(읽기)하는 방법을 정의하는 DID 방법을 생성할 수 있다.
+    이러한 DID는 ID 소유자의 각 공개 키(이 DID), ID 소유자가 공개하고자 하는 기타 정보 및 상호 작용에 필요한 네트워크 주소로 구성된 DID 문서 객체(DDO)로 블록체인(blockchain)에 배치된다.
+    <div class="no" style="display: none;" > (ID 소유자가 공개키를 통해서 자신이 드러내고자하는 정보를 DDO로 블록체인에 배치한다) </div>
+    
+<h3> DID Technology </h3>
     DID는  a unique identifier 와 an associated DID Document의 두 가지다
         The unique identifier looks something like 
         “did:example:123456789abcdefghi” 
@@ -89,14 +88,14 @@ SOVRIN
             }]
         }
 
-       @context (Must)
+    <h4> @context (Must) </h4>
         {
            "@context": "https://w3id.org/did/v1"
         }
         대화의 context를 정하는 부분이다 
          <div class="no" style="display: none;" > (두 소프트웨어 시스템이 데이터를 교환할떄 서로 이해하는 프로토콜을 사용해야한다 그 부분을 정하는 곳) </div>
 
-        @id
+    <h4> @id </h4>
         {
           "id": "did:example:21tDAKCERh95uGgKbJNHYp"
         }
@@ -105,7 +104,7 @@ SOVRIN
             DID 문서를 조회하기 위한 고유 ID다 
              <div class="no" style="display: none;" > (실제로 내가 DID 찾을 방법을 정하는 부분으로 현재는 비트코인, sovrin, IPFs, 등 9가지 등록방법이 정의되어있다) </div>
 
-        @public Keys
+    <h4> @public Keys </h4>
         "publicKey": [{
                 "id": "did:example:123456789abcdefghi#keys-1",
                 "type": "RsaVerificationKey2018",
@@ -129,7 +128,7 @@ SOVRIN
              (publicKey 속성의 값은 공개 키의 배열이어야하며 이 공개키 배열은 중복항목을 포함해서는 안됩니다 여기서의 공개키는 인증에서 삽입되거나 참조 될 수 있습니다 )
              </div>
 
-        Authentication
+    <h4> Authentication </h4>
             {
                 "@context": "https://w3id.org/did/v1",
                 "id": "did:example:123456789abcdefghi",
@@ -152,7 +151,7 @@ SOVRIN
                 ...
             }
             인증은 DID subject(사용자)가 DID와 관련되어 있다는 것을 암호롲 증명하는 매커니즘이다 
-        Service Endpoint
+    <h4> Service Endpoint </h4>
             {
                 "service": [{
                     "id": "did:example:123456789abcdefghi#openid",
@@ -195,7 +194,7 @@ SOVRIN
             }
             service end point는 해당 주체에대한 service end point의 검색을 가능하게 하는것 
 
-Evaluation
+<h3> Evaluation </h3>
     sovrin에서는 누구든지 신분을 만들 수 있고 인터넷에 접속할 수 있는 사람은 신원을 확인할 수 있다. 
     sovrin identity를 사용하면 transaction cost를 줄일 수 있고 개인정보보호, 사이버 범죄의 제한, 간단한 신원인증을 할 수 있다 
      <div class="no" style="display: none;" >
@@ -212,7 +211,7 @@ Evaluation
 
 
 
-JOLOCOM
+<h3> JOLOCOM </h3>
     JOLOCOM은 사용자에게 decentrailized identity를 제공하기 위해서 hierarchical deterministic keys (HD keys)를 사용한다 
     HD 키는 시드에서 생성되고 사용자가 제어권을 가지고 있으며 부모 키로부터 자식 키를 추가적으로 생성하는게 가능하다 
     시드만 알고 있다면 언제든지 복구가 가능하며 이를 통해 사용자는 익명성을 제공하기 위한 하위 신분을 여러개 생성할 수 있다
@@ -229,7 +228,7 @@ JOLOCOM
     HD 키를 사용한다면 identity Management system에서는 사용적합성의 문제가 있다. DID에서 사용자의 public key는 DDO의 IPFS 헤시에대한 
     매핑은 Ethereum smart contract에 의해 저장될 건데 워낙 많이 공개키가 있을 수 있으니까 얘가 어디에 매핑되어있는지를 알 고 있어야한다. 
 
-    Hierarchical Deterministic Key Derivation
+<h3> Hierarchical Deterministic Key Derivation </h3>
         Path Levels - 마스터 키 쌍은 BIP0032에 따라 개인키를 계층적으로 새엇ㅇ하고 관리할 수 있도록 한다 
         
         Identity path syntax: {m / purpose’ / context’ / entity’}
@@ -256,13 +255,13 @@ JOLOCOM
     IPFS와 같은 분산 스토로지에 저장해야한다. ) 
     </div>
 
-Evalutaion 
+<h3> Evalutaion  </h3>
 Jolocom의 미래목표는  오픈 소스 릴리즈에 관한 기존의 기술 표준을 계속 사용하면서 모든 사람에게 단순하고 전세계적으로 self-sovereign을 제공하는게 목표이다 
 그러므로 private verified credentials은 미래의 목표가 아니라고한다 
 
 
 
-shoCard
+<h3> shoCard </h3>
 shoCard는 블록체인 상의 신분관리와 여권이나 운전면허와 같은 이미 신뢰된 정보들과 결합해서 사용한다 
 shoCard는 다른 Identity management 시스템과는 달리 자체 서버를 사용해서 관련 정보들을 저장한다 
  <div class="no" style="display: none;" >
@@ -278,38 +277,39 @@ shoCard는 더좋은 블록체인이 나온다면 즉 새로운 더 빠르고 �
 )
 </div>
 
-The shoCard Architecture
+<h3> The shoCard Architecture 
 • ShoCard SDKs 
 • ShoCard Service layer
 • ShoCard SideChain
 • blockchain caches
 • ShoCard Blockchain Adaptor 
+</h3>
 
-ShoCard SDKs
+<h4> ShoCard SDKs </h4>
 ShoCard SDK는 다른 서비스를 신뢰하지 않도록 자신의 서버 또는 장치에서 로컬로 모든 검증 검사를 수행한다. 또한 블록체인 레코드를 독립적으로 검색하여 검증에 사용할 수 있다.
 
-ShoCard Service layer
+<h4>ShoCard Service layer </h4>
 블록체인뿐만 아니라 서로 다른 애플리케이션과 서버 간의 안전한 통신 파이프라인으로 사용된다.
  <div class="no" style="display: none;" >
 (안전한 통신 파이프라인 이라는 의미는 모든 메시지는 클라이언트에서 서명되고 다른 사람의 공개키로 암호화되서 shoCard 서비스는 절대로 데이터를 해독할 수 없다라는 걸 말한다) 
 </div>
 
-ShoCard SideChain
+<h4> ShoCard SideChain </h4>
 블록체인에 작성된 다양한 인증에대한 검증 코드를 저장하기 위한 수단으로 제공된다 public 블록체인은 storage가 제한적이고 확장성이 부족한 문제가 있다
 따라서 사이드 체인은 인증데이터를 보유하는데 사용된다 
  <div class="no" style="display: none;" >
 (각각의 기록들은 해쉬되고 그 해시들은 20분 정도마다 작업증거로 블록체인에 쓰여진다.) 
 </div>
 
-blockchain caches
+<h4> blockchain caches </h4>
 블록체인 로컬 복사본을 보관해서 더 빠르게 읽을수 있도록 캐쉬를 제공한다
 
-ShoCard Blockchain Adaptor
+<h4> ShoCard Blockchain Adaptor </h4>
 The ShoCard Blockchain Adaptor abstracts the interface to the blockchain that maintains the proof of work, 
 so the ShoCard Service layer can remain efficient
 블록체인 인터페이스를 추상화해서 여러 블록체인을 사용하기 위한 것 
 
-Self-certification - 블록체인 상에 자기 신원을 저장하고 이게 나라는 걸 증명하는 것 
+<h4> Self-certification - 블록체인 상에 자기 신원을 저장하고 이게 나라는 걸 증명하는 것 </h4>
 사용자는 shoCard mobile application이 필요하며 asymmetric key pair을 만들어준다 
 대부분 일반적인 경우 사용자의 identity는 스마트폰과 같은 모바일 기기에 유지된다
 사용자의 신원은 먼저 정부 ID, 운전면허 또는 여권을 스캔하거나 얼굴 이미지, 홍채 스캔 또는 오디오와 같은 생체 인식 정보를 캡처하여 수집한다 
@@ -321,7 +321,7 @@ Self-certification - 블록체인 상에 자기 신원을 저장하고 이게 �
 record와 내가 가진 신원이 일치한다라는 걸 증명하고 public key를 제공함으로써 이게 내 것임을 보여준다 
 
 
-Third-party Certification - 제3자가 개인의 신분과 자격을 증명하고 검증하는 것 
+<h4> Third-party Certification - 제3자가 개인의 신분과 자격을 증명하고 검증하는 것 </h4>
 사용자는 자신의 Identity와 other information을 제3자와 공유할 수 있다 
 사용자는 일반적으로 공유하기로 선택한 데이터를 공개 키와 함께 전달하고 블록체인 자체 인증에 대한 포인터를 전달하고 제3자가 다음 중 하나를 통해서 정보를 얻는다 
 # an App that can scan her data
@@ -332,7 +332,7 @@ Third-party Certification - 제3자가 개인의 신분과 자격을 증명하�
 (이게 뭐냐면 검증 프로세스가 이뤄졌다라는걸 문서화해서 전체 프로세스를 반복할 필요 없이 향후에 참조할 수 있도록 하는 것 )
 </div>
 
-Evaluation
+<h3> Evaluation </h3>
 ShoCard website에서는 shoCard를 이렇게 말한다.  
 ”It’s the one identity verification system that works the way consumers and businesses need it to for security, privacy,
  and always-on fraud protection”
@@ -348,7 +348,7 @@ shoStore 서버가 다운되면 인증을 하지 못하는 문제가 있다.
 
 
 
-Blockstack
+<h3> Blockstack </h3>
     블록스택은 탈중앙화 컴퓨터 네트워크다
     클라우드 컴퓨팅의 대안(alternative)이라고 생각하면 이해하기 편하다. 대개 개발자는 클라우드 서버에 애플리케이션을 개발하거나 그 안에 사용자 데이터를 저장하는데,  블록스택은 이 기능을 대체한다. 
     사용자가 개별적인 데이터 라커(Locker)를 가지는 구조이다. 
@@ -399,7 +399,7 @@ IBM이 개인용 컴퓨터를 개발하면서 컴퓨터 개발의 시대가 시�
 블록스택 어스는 사용자가 앱에 로그인할 때 블록체인 기반 디앱인지 일반 앱인지 구분할 수 없을 정도로 편리하게 데이터를 입력하게끔 한 신원증명 방식”이라며 
 “다만 사용자 데이터에 대한 통제권은 블록스택이 아닌 사용자 개인에게 있다”
 
-Evaluation
+<h3> Evaluation </h3>
 블록스택이 어떤 블록체인이라도 사용할 수 있다는 사실은 더 이상의 성공을 위해 매우 중요하다. 
 왜냐하면 블록스택은 어떤 식으로든 블록체인(blockchain)이 불안정해지는 경우, 예를 들어, 악성 행위자가 51%의 공격을 할 수 있게 하는 시스템에 해시율이 충분하지 않은 경우 등, 
 블록체인(blockchain)이 어떤 식으로든 불안정해지는 경우 다른 블록체인을 쓰면되니까
